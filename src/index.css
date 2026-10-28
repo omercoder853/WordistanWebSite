@@ -1,3 +1,12 @@
+/* Google Fonts — Inter (premium typography) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+/* Bootstrap navbar override — prevent Bootstrap from interfering with custom navbar */
+.nb, .nb * {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif !important;
+  box-sizing: border-box;
+}
+
 :root {
   --text: #6b6375;
   --text-h: #08060d;

@@ -1,0 +1,423 @@
+/* ===================================================
+   HERO SECTION
+   Responsive hero with content + phone mockup visual
+   =================================================== */
+
+/* ---------- Design tokens (scoped) ---------- */
+.hero {
+  --hero-pink: #E91E8C;
+  --hero-pink-light: #F472B6;
+  --hero-purple: #7C3AED;
+  --hero-circle-bg: linear-gradient(135deg, #F0E8FF 0%, #FDE8F5 60%, #EDE4FF 100%);
+  --hero-label-color: #E91E8C;
+  --hero-title-color: #1A1A2E;
+  --hero-desc-color: #4B5563;
+  --hero-feature-color: #6B7280;
+}
+
+/* ---------- Section wrapper ---------- */
+.hero {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+}
+
+/* ---------- Container ---------- */
+.hero__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 48px;
+  position: relative;
+  z-index: 2;
+}
+
+/* ============================
+   LEFT COLUMN — Content
+   ============================ */
+.hero__content {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  animation: heroFadeInUp 0.8s ease-out both;
+}
+
+/* Label pill */
+.hero__label {
+  display: inline-block;
+  width: fit-content;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--hero-label-color);
+  margin-bottom: 16px;
+}
+
+/* Title */
+.hero__title {
+  font-size: clamp(32px, 4.2vw, 56px);
+  font-weight: 800;
+  line-height: 1.15;
+  color: var(--hero-title-color);
+  margin: 0 0 24px;
+  letter-spacing: -1.5px;
+}
+
+.hero__title-highlight {
+  background: linear-gradient(135deg, var(--hero-pink), var(--hero-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Description */
+.hero__desc {
+  font-size: clamp(15px, 1.2vw, 18px);
+  line-height: 1.7;
+  color: var(--hero-desc-color);
+  margin: 0 0 32px;
+  max-width: 480px;
+}
+
+/* ---------- CTA Buttons ---------- */
+.hero__cta-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.hero__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  border-radius: 14px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+/* Primary — filled gradient */
+.hero__btn--primary {
+  background: linear-gradient(135deg, var(--hero-pink), #D946A8);
+  color: #fff;
+  padding: 10px 28px;
+  box-shadow: 0 4px 20px rgba(233, 30, 140, 0.3);
+}
+
+.hero__btn--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(233, 30, 140, 0.45);
+}
+
+.hero__btn-icon {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+.hero__btn-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.2;
+}
+
+.hero__btn-sub {
+  font-size: 10px;
+  font-weight: 400;
+  opacity: 0.85;
+}
+
+.hero__btn-main {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+/* Secondary — ghost / outlined */
+.hero__btn--secondary {
+  background: #fff;
+  color: var(--hero-title-color);
+  border: 2px solid #E5E7EB;
+}
+
+.hero__btn--secondary:hover {
+  border-color: var(--hero-pink-light);
+  color: var(--hero-pink);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(233, 30, 140, 0.12);
+}
+
+/* ---------- Features row ---------- */
+.hero__features {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+.hero__feature {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--hero-feature-color);
+  font-weight: 500;
+}
+
+.hero__feature svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+/* ============================
+   RIGHT COLUMN — Visual
+   ============================ */
+.hero__visual {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+  animation: heroFadeInUp 0.8s 0.2s ease-out both;
+}
+
+/* Background circle */
+.hero__circle {
+  position: absolute;
+  width: clamp(320px, 40vw, 540px);
+  height: clamp(320px, 40vw, 540px);
+  background: var(--hero-circle-bg);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  filter: blur(2px);
+}
+
+/* Phone mockup image */
+.hero__phones {
+  position: relative;
+  z-index: 1;
+  width: clamp(340px, 38vw, 520px);
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.12));
+}
+
+/* ============================
+   DECORATIVE SVG SQUIGGLES
+   ============================ */
+.hero__squiggle {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero__squiggle--top {
+  width: 100px;
+  top: 12%;
+  left: 38%;
+  transform: rotate(-10deg);
+  animation: squiggleFloat 6s ease-in-out infinite;
+}
+
+.hero__squiggle--right {
+  width: 60px;
+  top: 15%;
+  right: 4%;
+  transform: rotate(15deg);
+  animation: squiggleFloat 7s 1s ease-in-out infinite;
+}
+
+.hero__squiggle--bottom {
+  width: 80px;
+  bottom: 10%;
+  right: 35%;
+  transform: rotate(5deg);
+  animation: squiggleFloat 5s 0.5s ease-in-out infinite;
+}
+
+/* ============================
+   ANIMATIONS
+   ============================ */
+@keyframes heroFadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes squiggleFloat {
+  0%, 100% {
+    transform: translateY(0) rotate(var(--sq-rot, 0deg));
+    opacity: 0.4;
+  }
+  50% {
+    transform: translateY(-8px) rotate(var(--sq-rot, 0deg));
+    opacity: 0.6;
+  }
+}
+
+/* ============================
+   RESPONSIVE — Tablet
+   ============================ */
+@media (max-width: 1024px) {
+  .hero {
+    padding: 100px 0 60px;
+    min-height: auto;
+  }
+
+  .hero__container {
+    gap: 24px;
+    padding: 0 32px;
+  }
+
+  .hero__title {
+    margin-bottom: 18px;
+  }
+
+  .hero__desc {
+    margin-bottom: 24px;
+  }
+
+  .hero__cta-row {
+    margin-bottom: 28px;
+  }
+
+  .hero__phones {
+    width: clamp(280px, 35vw, 420px);
+  }
+
+  .hero__circle {
+    width: clamp(260px, 34vw, 400px);
+    height: clamp(260px, 34vw, 400px);
+  }
+
+  .hero__visual {
+    min-height: 380px;
+  }
+}
+
+/* ============================
+   RESPONSIVE — Mobile
+   ============================ */
+@media (max-width: 768px) {
+  .hero {
+    padding: 100px 0 48px;
+  }
+
+  .hero__container {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  /* Visual moves to top on mobile */
+  .hero__visual {
+    order: -1;
+    min-height: 280px;
+  }
+
+  .hero__content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero__desc {
+    max-width: 100%;
+  }
+
+  .hero__cta-row {
+    justify-content: center;
+  }
+
+  .hero__features {
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .hero__phones {
+    width: clamp(260px, 75vw, 380px);
+  }
+
+  .hero__circle {
+    width: clamp(240px, 70vw, 360px);
+    height: clamp(240px, 70vw, 360px);
+  }
+
+  /* Hide some squiggles on mobile */
+  .hero__squiggle--top,
+  .hero__squiggle--bottom {
+    display: none;
+  }
+
+  .hero__squiggle--right {
+    top: 5%;
+    right: 5%;
+    width: 50px;
+  }
+}
+
+/* ============================
+   RESPONSIVE — Small phones
+   ============================ */
+@media (max-width: 480px) {
+  .hero {
+    padding: 90px 0 36px;
+  }
+
+  .hero__container {
+    padding: 0 16px;
+  }
+
+  .hero__label {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+  }
+
+  .hero__cta-row {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero__btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero__features {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .hero__phones {
+    width: clamp(220px, 80vw, 320px);
+  }
+
+  .hero__circle {
+    width: clamp(200px, 75vw, 300px);
+    height: clamp(200px, 75vw, 300px);
+  }
+}

@@ -1,0 +1,410 @@
+/* ===================================================
+   MARKETING SECTION (WORDİSTAN FEATURES)
+   Modern, Color-Coded, Premium Feature Showcase
+   =================================================== */
+
+/* ---------- Section Wrapper ---------- */
+.mkt {
+  position: relative;
+  width: 100%;
+  padding: 50px 0 100px;
+  background: #ffffff;
+  overflow: hidden;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Subtle top divider gradient to seamlessly blend from hero */
+.mkt::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(233, 30, 140, 0.15) 30%, rgba(124, 58, 237, 0.15) 70%, transparent 100%);
+}
+
+/* ---------- Container ---------- */
+.mkt__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+  box-sizing: border-box;
+}
+
+/* ===================================================
+   SECTION HEADER
+   =================================================== */
+.mkt__header {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 52px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Main title */
+.mkt__title {
+  font-size: clamp(28px, 3.6vw, 42px);
+  font-weight: 800;
+  line-height: 1.25;
+  color: #1A1A2E;
+  margin: 0 0 16px;
+  letter-spacing: -0.5px;
+}
+
+.mkt__title-highlight {
+  background: linear-gradient(135deg, #E91E8C 0%, #7C3AED 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Subtitle */
+.mkt__subtitle {
+  font-size: clamp(15px, 1.8vw, 17px);
+  font-weight: 400;
+  line-height: 1.65;
+  color: #4B5563;
+  margin: 0;
+}
+
+/* ===================================================
+   TOP ROW: 2 LARGE SHOWCASE CARDS (2:3 Grid Top)
+   =================================================== */
+.mkt__showcase-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.mkt__card-large {
+  position: relative;
+  border-radius: 28px;
+  padding: 36px 32px;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  overflow: visible;
+  box-sizing: border-box;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+
+.mkt__card-large:hover {
+  transform: translateY(-4px);
+}
+
+/* Sol Kart: Kişisel Sözlükler (Pembe Tema) */
+.mkt__card-large--dict {
+  background: linear-gradient(145deg, #FFF5F9 0%, #FFFFFF 100%);
+  border: 1px solid #FCE7F3;
+  box-shadow: 0 12px 36px -12px rgba(233, 30, 140, 0.08);
+}
+
+.mkt__card-large--dict:hover {
+  box-shadow: 0 20px 48px -12px rgba(233, 30, 140, 0.16);
+  border-color: #FBCFE8;
+}
+
+/* Sağ Kart: Etkileşimli Oyunlar (Amber/Turuncu Tema) */
+.mkt__card-large--games {
+  background: linear-gradient(145deg, #FFFDF5 0%, #FFFFFF 100%);
+  border: 1px solid #FEF3C7;
+  box-shadow: 0 12px 36px -12px rgba(245, 158, 11, 0.08);
+}
+
+.mkt__card-large--games:hover {
+  box-shadow: 0 20px 48px -12px rgba(245, 158, 11, 0.16);
+  border-color: #FDE68A;
+}
+
+/* Mockup Container & Glow */
+.mkt__mockup-wrapper {
+  position: relative;
+  flex: 0 0 46%;
+  max-width: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mkt__mockup-glow {
+  position: absolute;
+  width: 140%;
+  height: 140%;
+  border-radius: 50%;
+  filter: blur(28px);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.mkt__mockup-glow--pink {
+  background: radial-gradient(circle, rgba(233, 30, 140, 0.18) 0%, transparent 70%);
+}
+
+.mkt__mockup-glow--amber {
+  background: radial-gradient(circle, rgba(245, 158, 11, 0.18) 0%, transparent 70%);
+}
+
+.mkt__mockup-img {
+  position: relative;
+  z-index: 2;
+  height: auto;
+  width: 100%;
+  max-height: 360px;
+  object-fit: contain;
+  filter: drop-shadow(0 14px 28px rgba(0, 0, 0, 0.12));
+  border-radius: 20px;
+  display: block;
+}
+
+/* Content block inside large card */
+.mkt__large-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 2;
+  position: relative;
+}
+
+/* Icon Badges */
+.mkt__icon-badge {
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+  flex-shrink: 0;
+}
+
+.mkt__icon-badge--pink {
+  background: #FDF2F8;
+  color: #E91E8C;
+  border: 1px solid #FCE7F3;
+}
+
+.mkt__icon-badge--amber {
+  background: #FFFBEB;
+  color: #D97706;
+  border: 1px solid #FEF3C7;
+}
+
+/* Large card titles & text */
+.mkt__large-title {
+  font-size: clamp(20px, 2.2vw, 24px);
+  font-weight: 700;
+  color: #1A1A2E;
+  margin: 0 0 12px;
+  line-height: 1.3;
+}
+
+.mkt__large-desc {
+  font-size: 15px;
+  color: #4B5563;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ===================================================
+   BOTTOM ROW: 3 FEATURE CARDS (2:3 Grid Bottom)
+   =================================================== */
+.mkt__features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.mkt__card-feature {
+  position: relative;
+  border-radius: 24px;
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  box-sizing: border-box;
+  background: #ffffff;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+  will-change: transform;
+}
+
+.mkt__card-feature:hover {
+  transform: translateY(-4px);
+}
+
+/* Feature 1: Hızlı Kelime Çevirisi (İndigo) */
+.mkt__card-feature--translate {
+  background: linear-gradient(180deg, #F8FAFF 0%, #FFFFFF 100%);
+  border: 1px solid #E0E7FF;
+  box-shadow: 0 8px 24px -8px rgba(99, 102, 241, 0.08);
+}
+
+.mkt__card-feature--translate:hover {
+  border-color: #C7D2FE;
+  box-shadow: 0 16px 36px -8px rgba(99, 102, 241, 0.16);
+}
+
+/* Feature 2: Hazır Koleksiyonlar (Zümrüt Yeşili) */
+.mkt__card-feature--collections {
+  background: linear-gradient(180deg, #F6FDF9 0%, #FFFFFF 100%);
+  border: 1px solid #D1FAE5;
+  box-shadow: 0 8px 24px -8px rgba(16, 185, 129, 0.08);
+}
+
+.mkt__card-feature--collections:hover {
+  border-color: #A7F3D0;
+  box-shadow: 0 16px 36px -8px rgba(16, 185, 129, 0.16);
+}
+
+/* Feature 3: Online / Offline Kullanım (Gök Mavisi) */
+.mkt__card-feature--offline {
+  background: linear-gradient(180deg, #F4FAFF 0%, #FFFFFF 100%);
+  border: 1px solid #E0F2FE;
+  box-shadow: 0 8px 24px -8px rgba(14, 165, 233, 0.08);
+}
+
+.mkt__card-feature--offline:hover {
+  border-color: #BAE6FD;
+  box-shadow: 0 16px 36px -8px rgba(14, 165, 233, 0.16);
+}
+
+/* Feature Icons */
+.mkt__feature-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.mkt__feature-icon--indigo {
+  background: #EEF2FF;
+  color: #6366F1;
+  border: 1px solid #E0E7FF;
+}
+
+.mkt__feature-icon--emerald {
+  background: #ECFDF5;
+  color: #10B981;
+  border: 1px solid #D1FAE5;
+}
+
+.mkt__feature-icon--blue {
+  background: #F0F9FF;
+  color: #0EA5E9;
+  border: 1px solid #E0F2FE;
+}
+
+/* Feature content */
+.mkt__feature-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.mkt__feature-title {
+  font-size: 19px;
+  font-weight: 700;
+  color: #1A1A2E;
+  margin: 0 0 8px;
+  line-height: 1.35;
+}
+
+.mkt__feature-desc {
+  font-size: 14.5px;
+  color: #4B5563;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ===================================================
+   RESPONSIVE DESIGN (Tablets & Mobiles)
+   =================================================== */
+
+/* Tablet (Large to Mid) */
+@media (max-width: 992px) {
+  .mkt {
+    padding: 60px 0 80px;
+  }
+
+  .mkt__showcase-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .mkt__features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  /* Make 3rd feature card span both columns on tablet for pleasant balance */
+  .mkt__features-grid> :nth-child(3) {
+    grid-column: span 2;
+  }
+
+  .mkt__card-large {
+    padding: 32px 28px;
+  }
+}
+
+/* Mobile Screens */
+@media (max-width: 680px) {
+  .mkt__container {
+    padding: 0 20px;
+  }
+
+  .mkt__header {
+    margin-bottom: 40px;
+  }
+
+  /* Stack card contents vertically on mobile */
+  .mkt__card-large {
+    flex-direction: column;
+    padding: 28px 20px;
+    gap: 24px;
+    text-align: center;
+  }
+
+  /* For card 2 (games): ensure text appears first, mockup second on mobile */
+  .mkt__card-large--games {
+    flex-direction: column;
+  }
+
+  .mkt__large-content {
+    align-items: center;
+  }
+
+  .mkt__icon-badge {
+    margin-bottom: 14px;
+  }
+
+  .mkt__mockup-wrapper {
+    flex: initial;
+    max-width: 190px;
+  }
+
+  .mkt__mockup-img {
+    max-height: 290px;
+  }
+
+  .mkt__features-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .mkt__features-grid> :nth-child(3) {
+    grid-column: span 1;
+  }
+
+  .mkt__card-feature {
+    padding: 24px 20px;
+    gap: 14px;
+  }
+}
