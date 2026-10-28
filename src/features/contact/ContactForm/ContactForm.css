@@ -1,0 +1,198 @@
+/* ===================================================
+   CONTACT FORM CARD
+   Modern floating card with real-time feedback
+   =================================================== */
+
+.c-form-card {
+  background: #ffffff;
+  border-radius: 28px;
+  padding: 36px 32px;
+  border: 1px solid rgba(124, 58, 237, 0.08);
+  box-shadow: 0 20px 45px -15px rgba(124, 58, 237, 0.08), 0 0 1px rgba(0, 0, 0, 0.04);
+  box-sizing: border-box;
+  width: 100%;
+  position: relative;
+}
+
+.c-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Group & Labels ── */
+.c-form__group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.c-form__label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.c-form__label {
+  font-size: 14.5px;
+  font-weight: 600;
+  color: #1A1A2E;
+  user-select: none;
+}
+
+.c-form__required {
+  color: #E91E8C;
+  font-weight: 700;
+  margin-left: 2px;
+}
+
+.c-form__counter {
+  font-size: 12px;
+  font-weight: 500;
+  color: #9CA3AF;
+  letter-spacing: 0.2px;
+}
+
+/* ── Inputs & Textarea ── */
+.c-form__input,
+.c-form__textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: #FAF7FC;
+  border: 1.5px solid #EDE8F5;
+  border-radius: 14px;
+  padding: 13px 16px;
+  font-size: 15px;
+  color: #1A1A2E;
+  font-family: inherit;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.c-form__input::placeholder,
+.c-form__textarea::placeholder {
+  color: #9CA3AF;
+  font-size: 14.5px;
+}
+
+.c-form__input:focus,
+.c-form__textarea:focus {
+  background: #ffffff;
+  border-color: #E91E8C;
+  box-shadow: 0 0 0 4px rgba(233, 30, 140, 0.12);
+  outline: none;
+}
+
+/* Error state */
+.c-form__input--error {
+  border-color: #EF4444 !important;
+  background: #FEF2F2 !important;
+  box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.1) !important;
+}
+
+.c-form__error-msg {
+  font-size: 12.5px;
+  color: #DC2626;
+  margin: 6px 0 0;
+  font-weight: 500;
+  line-height: 1.4;
+  animation: cFormFadeIn 0.2s ease;
+}
+
+.c-form__textarea {
+  resize: vertical;
+  min-height: 120px;
+  line-height: 1.55;
+}
+
+/* ── Submit Button ── */
+.c-form__submit-btn {
+  width: 100%;
+  margin-top: 8px;
+  padding: 15px 24px;
+  border-radius: 14px;
+  border: none;
+  background: linear-gradient(135deg, #E91E8C 0%, #7C3AED 100%);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0 10px 25px -6px rgba(233, 30, 140, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+  user-select: none;
+}
+
+.c-form__submit-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px -6px rgba(233, 30, 140, 0.45);
+}
+
+.c-form__submit-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.c-form__submit-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.c-form__btn-icon {
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.c-form__submit-btn:hover:not(:disabled) .c-form__btn-icon {
+  transform: translateX(2px) translateY(-2px);
+}
+
+/* Spinner */
+.c-form__spinner {
+  width: 18px;
+  height: 18px;
+  border: 2.5px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: cFormSpin 0.7s linear infinite;
+  display: inline-block;
+}
+
+@keyframes cFormSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes cFormFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ── Mobile Tweaks ── */
+@media (max-width: 680px) {
+  .c-form-card {
+    padding: 28px 20px;
+    border-radius: 22px;
+  }
+
+  .c-form__input,
+  .c-form__textarea {
+    padding: 12px 14px;
+    font-size: 14.5px;
+  }
+
+  .c-form__submit-btn {
+    padding: 14px 20px;
+    font-size: 15px;
+  }
+}
