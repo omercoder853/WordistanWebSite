@@ -1,4 +1,3 @@
-import React from "react";
 import { useTranslation } from "react-i18next";
 import personalDictionariesMockup from "../../../assets/personal_dictionaries_mockup.png";
 import gamesMockup from "../../../assets/games_mockup.png";

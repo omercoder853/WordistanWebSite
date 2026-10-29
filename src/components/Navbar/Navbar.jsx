@@ -64,6 +64,7 @@ function Navbar() {
                         <li key={to} className="nb__item">
                             <NavLink
                                 to={to}
+                                end={to === "/"}
                                 className={({ isActive }) =>
                                     `nb__link ${isActive ? "nb__link--active" : ""}`
                                 }
@@ -127,6 +128,7 @@ function Navbar() {
                         <li key={to}>
                             <NavLink
                                 to={to}
+                                end={to === "/"}
                                 className={({ isActive }) =>
                                     `nb__mobile-link ${isActive ? "nb__mobile-link--active" : ""}`
                                 }
