@@ -34,7 +34,6 @@ function Navbar() {
     const navLinks = [
         { to:"/" , label:t("home")},
         { to: "/about",    label: t("nav_about") },
-        { to: "/download", label: t("nav_download") },
         { to: "/legal", label: t("nav_legal") },
         { to: "/contact",  label: t("nav_contact") },
     ];

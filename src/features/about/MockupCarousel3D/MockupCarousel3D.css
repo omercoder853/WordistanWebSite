@@ -67,7 +67,9 @@
 
 /* Active / Center Card */
 .c3d__card--active {
-  transform: translate3d(-50%, -50%, 50px) rotateY(0deg) scale(1);
+  transform: translate(-50%, -50%);
+  transform-style: flat;
+  will-change: auto;
   z-index: 10;
   opacity: 1;
   filter: none;

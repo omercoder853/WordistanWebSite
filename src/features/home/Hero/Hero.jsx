@@ -1,9 +1,15 @@
 import "./Hero.css";
 import { useTranslation } from "react-i18next";
-import mockupHero from "../../../assets/mockup_hero.png";
+import mockupHero from "../../../assets/mockups/mockup_hero.png";
+import { useNavigate } from "react-router-dom";
 
 function Hero() {
   const { t } = useTranslation();
+  const navigate = useNavigate();
+
+  const goToAbout = ()=>{
+    navigate("/about");
+  }
 
   return (
     <section className="hero" id="hero">
@@ -93,7 +99,7 @@ function Hero() {
               </div>
             </a>
 
-            <a href="#" className="hero__btn hero__btn--secondary" id="hero-cta-explore">
+            <button type="button" onClick={goToAbout} className="hero__btn hero__btn--secondary" id="hero-cta-explore">
               <svg
                 className="hero__btn-icon"
                 viewBox="0 0 24 24"
@@ -106,7 +112,7 @@ function Hero() {
                 <line x1="12" y1="18" x2="12" y2="18.01" strokeWidth="2" strokeLinecap="round" />
               </svg>
               <span>{t("hero_cta_secondary")}</span>
-            </a>
+            </button>
           </div>
 
           <div className="hero__features">
