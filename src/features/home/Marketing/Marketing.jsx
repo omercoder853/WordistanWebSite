@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
-import personalDictionariesMockup from "../../../assets/personal_dictionaries_mockup.png";
-import gamesMockup from "../../../assets/games_mockup.png";
+import personalDictionariesMockup from "../../../assets/mockups/mockup-dicts-mkt.png";
+import gamesMockup from "../../../assets/mockups/mockup-games-mkt.png";
 import "./Marketing.css";
 
 export default function Marketing() {

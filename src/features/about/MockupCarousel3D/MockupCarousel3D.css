@@ -1,0 +1,273 @@
+/* ===================================================
+   3D MOCKUP COVERFLOW CAROUSEL
+   Apple/Linear-style interactive 3D perspective gallery
+   =================================================== */
+
+.c3d {
+  position: relative;
+  width: 100%;
+  max-width: 620px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  user-select: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+/* ── 3D Viewport / Stage ── */
+.c3d__stage {
+  position: relative;
+  width: 100%;
+  height: 620px;
+  perspective: 1200px;
+  perspective-origin: 50% 50%;
+  transform-style: preserve-3d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+}
+
+/* ── Individual Phone Card ── */
+.c3d__card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 350px;
+  max-width: 78%;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+              opacity 0.5s ease,
+              filter 0.5s ease,
+              box-shadow 0.5s ease;
+  transform-style: preserve-3d;
+  will-change: transform, opacity;
+  box-sizing: border-box;
+}
+
+.c3d__card-inner {
+  position: relative;
+  width: 100%;
+  background: transparent;
+}
+
+.c3d__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  pointer-events: none;
+  filter: drop-shadow(0 22px 24px rgba(52, 31, 74, 0.16));
+}
+
+/* ── 3D TRANSFORM STATES ── */
+
+/* Active / Center Card */
+.c3d__card--active {
+  transform: translate3d(-50%, -50%, 50px) rotateY(0deg) scale(1);
+  z-index: 10;
+  opacity: 1;
+  filter: none;
+  cursor: default;
+}
+
+.c3d__card--active .c3d__img {
+  filter: drop-shadow(0 28px 30px rgba(88, 42, 133, 0.2));
+}
+
+/* Left Card */
+.c3d__card--left {
+  transform: translate3d(calc(-50% - 145px), -50%, -90px) rotateY(26deg) scale(0.85);
+  z-index: 5;
+  opacity: 0.68;
+  filter: brightness(0.92) contrast(0.95);
+}
+
+.c3d__card--left:hover {
+  opacity: 0.9;
+  filter: brightness(1);
+  transform: translate3d(calc(-50% - 135px), -50%, -60px) rotateY(22deg) scale(0.88);
+}
+
+/* Right Card */
+.c3d__card--right {
+  transform: translate3d(calc(-50% + 145px), -50%, -90px) rotateY(-26deg) scale(0.85);
+  z-index: 5;
+  opacity: 0.68;
+  filter: brightness(0.92) contrast(0.95);
+}
+
+.c3d__card--right:hover {
+  opacity: 0.9;
+  filter: brightness(1);
+  transform: translate3d(calc(-50% + 135px), -50%, -60px) rotateY(-22deg) scale(0.88);
+}
+
+/* Hidden / Far Back Cards */
+.c3d__card--hidden {
+  transform: translate3d(-50%, -50%, -200px) scale(0.65);
+  z-index: 1;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Caption Pill under Active Card */
+.c3d__caption {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: -45px;
+}
+
+.c3d__caption span {
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #4C1D95;
+  background: #F5F3FF;
+  border: 1px solid #EDE9FE;
+  box-shadow: 0 4px 12px -2px rgba(124, 58, 237, 0.1);
+}
+
+/* ── CONTROLS: PREV & NEXT ARROWS ── */
+.c3d__controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4px;
+  pointer-events: none;
+  z-index: 20;
+}
+
+.c3d__btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid #EDE9FE;
+  color: #6D28D9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  pointer-events: auto;
+  box-shadow: 0 8px 20px -4px rgba(124, 58, 237, 0.18),
+              0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.c3d__btn:hover {
+  background: #7C3AED;
+  color: #FFFFFF;
+  border-color: #7C3AED;
+  transform: scale(1.1);
+  box-shadow: 0 12px 24px -4px rgba(124, 58, 237, 0.35);
+}
+
+.c3d__btn:active {
+  transform: scale(0.96);
+}
+
+/* ── DOT INDICATORS ── */
+.c3d__dots {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 20;
+  margin-top: -25px;
+}
+
+.c3d__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: #E5E7EB;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.c3d__dot:hover {
+  background: #C4B5FD;
+}
+
+.c3d__dot--active {
+  width: 26px;
+  background: linear-gradient(90deg, #7C3AED 0%, #E91E8C 100%);
+  box-shadow: 0 2px 8px -1px rgba(124, 58, 237, 0.35);
+}
+
+/* ===================================================
+   RESPONSIVE DESIGN (Tablet & Mobil)
+   =================================================== */
+
+@media (max-width: 992px) {
+  .c3d {
+    max-width: 580px;
+  }
+  .c3d__stage {
+    height: 560px;
+  }
+  .c3d__card {
+    width: 320px;
+  }
+  .c3d__card--left {
+    transform: translate3d(calc(-50% - 135px), -50%, -75px) rotateY(22deg) scale(0.85);
+  }
+  .c3d__card--right {
+    transform: translate3d(calc(-50% + 135px), -50%, -75px) rotateY(-22deg) scale(0.85);
+  }
+}
+
+@media (max-width: 640px) {
+  .c3d {
+    max-width: 100%;
+  }
+  .c3d__stage {
+    height: 480px;
+  }
+  .c3d__card {
+    width: 270px;
+  }
+  .c3d__card--left {
+    transform: translate3d(calc(-50% - 95px), -50%, -60px) rotateY(18deg) scale(0.82);
+    opacity: 0.55;
+  }
+  .c3d__card--right {
+    transform: translate3d(calc(-50% + 95px), -50%, -60px) rotateY(-18deg) scale(0.82);
+    opacity: 0.55;
+  }
+  .c3d__btn {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+@media (max-width: 420px) {
+  .c3d__stage {
+    height: 420px;
+  }
+  .c3d__card {
+    width: 235px;
+  }
+  .c3d__card--left {
+    transform: translate3d(calc(-50% - 75px), -50%, -50px) rotateY(16deg) scale(0.8);
+    opacity: 0.45;
+  }
+  .c3d__card--right {
+    transform: translate3d(calc(-50% + 75px), -50%, -50px) rotateY(-16deg) scale(0.8);
+    opacity: 0.45;
+  }
+}

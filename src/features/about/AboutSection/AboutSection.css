@@ -1,0 +1,214 @@
+/* ===================================================
+   ABOUT SECTION (ALTERNATING FEATURE BLOCK)
+   Two-column zigzag showcase with 3D carousel integration
+   =================================================== */
+
+.about-sec {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.about-sec__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: grid;
+  grid-template-columns: 1fr 1.08fr;
+  gap: 60px;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+/* ── REVERSED LAYOUT (Zikzak Düzen) ── */
+.about-sec--reversed .about-sec__container {
+  grid-template-columns: 1.08fr 1fr;
+}
+
+.about-sec--reversed .about-sec__info {
+  order: 2;
+}
+
+.about-sec--reversed .about-sec__carousel-col {
+  order: 1;
+}
+
+/* ── Content Column ── */
+.about-sec__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+/* Category Badge */
+.about-sec__badge {
+  display: inline-block;
+  padding: 6px 18px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.about-sec__badge--purple {
+  color: #7C3AED;
+  background: #F5F3FF;
+  border: 1px solid #EDE9FE;
+  box-shadow: 0 2px 8px -2px rgba(124, 58, 237, 0.12);
+}
+
+.about-sec__badge--pink {
+  color: #E91E8C;
+  background: #FDF2F8;
+  border: 1px solid #FCE7F3;
+  box-shadow: 0 2px 8px -2px rgba(233, 30, 140, 0.12);
+}
+
+.about-sec__badge--magenta {
+  color: #C026D3;
+  background: #FCF4FF;
+  border: 1px solid #F5D0FE;
+  box-shadow: 0 2px 8px -2px rgba(192, 38, 211, 0.12);
+}
+
+/* Section Title */
+.about-sec__title {
+  font-size: clamp(30px, 3.6vw, 44px);
+  font-weight: 800;
+  line-height: 1.2;
+  color: #111827;
+  letter-spacing: -0.7px;
+  margin: 0 0 16px;
+  text-align: left;
+}
+
+.about-sec__highlight {
+  background: linear-gradient(135deg, #7C3AED 0%, #E91E8C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline;
+}
+
+/* Description */
+.about-sec__desc {
+  font-size: 16px;
+  line-height: 1.68;
+  color: #4B5563;
+  margin: 0 0 28px;
+  max-width: 500px;
+  text-align: left;
+}
+
+/* Checklist Items */
+.about-sec__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+}
+
+.about-sec__item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-align: left;
+}
+
+.about-sec__check-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%);
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 3px 8px -2px rgba(124, 58, 237, 0.38);
+}
+
+.about-sec__item-text {
+  font-size: 15.5px;
+  font-weight: 500;
+  color: #1F2937;
+  line-height: 1.4;
+}
+
+/* Carousel Column */
+.about-sec__carousel-col {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+/* ===================================================
+   RESPONSIVE DESIGN (Tablet & Mobil)
+   =================================================== */
+
+@media (max-width: 992px) {
+  .about-sec {
+    padding: 40px 0 50px;
+  }
+
+  .about-sec__container,
+  .about-sec--reversed .about-sec__container {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    padding: 0 24px;
+    max-width: 620px;
+  }
+
+  /* Reset order on mobile so text is always first */
+  .about-sec--reversed .about-sec__info {
+    order: 1;
+  }
+
+  .about-sec--reversed .about-sec__carousel-col {
+    order: 2;
+  }
+
+  .about-sec__desc {
+    max-width: 100%;
+    margin-bottom: 22px;
+  }
+
+  .about-sec__list {
+    gap: 12px;
+  }
+
+  .about-sec__item-text {
+    font-size: 14.5px;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-sec {
+    padding: 30px 0 40px;
+  }
+
+  .about-sec__container {
+    padding: 0 20px;
+    gap: 28px;
+  }
+
+  .about-sec__title {
+    font-size: 27px;
+    margin-bottom: 12px;
+  }
+
+  .about-sec__desc {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 18px;
+  }
+}
+

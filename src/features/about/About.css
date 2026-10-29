@@ -1,0 +1,41 @@
+/* ===================================================
+   WORDISTAN ABOUT PAGE MAIN STYLES
+   =================================================== */
+
+.about-page {
+  position: relative;
+  width: 100%;
+  min-height: calc(100vh - 140px);
+  background: linear-gradient(150deg, #FAF7FF 0%, #FFFFFF 35%, #FFF5F9 70%, #FAF7FF 100%);
+  box-sizing: border-box;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: #1F2937;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+/* Background ambient light effects */
+.about-page::before {
+  content: "";
+  position: absolute;
+  top: -120px;
+  right: -100px;
+  width: 550px;
+  height: 550px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(124, 58, 237, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.about-page::after {
+  content: "";
+  position: absolute;
+  top: 35%;
+  left: -120px;
+  width: 550px;
+  height: 550px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(233, 30, 140, 0.07) 0%, transparent 70%);
+  pointer-events: none;
+}
+
