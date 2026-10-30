@@ -1,0 +1,102 @@
+.not-found-page {
+    flex: 1;
+    width: 100%;
+    min-height: 100svh;
+    display: grid;
+    place-items: center;
+    padding: 48px 20px;
+    box-sizing: border-box;
+    background:
+        radial-gradient(ellipse at 15% 15%, rgba(233, 30, 140, 0.08), transparent 38%),
+        radial-gradient(ellipse at 85% 85%, rgba(124, 58, 237, 0.08), transparent 38%),
+        #faf9fc;
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.not-found__content {
+    width: min(100%, 560px);
+    text-align: center;
+}
+
+.not-found__brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 32px;
+    color: #30243d;
+    font-size: 34px;
+    font-weight: 750;
+    letter-spacing: -1px;
+}
+
+.not-found__logo {
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+}
+
+.not-found__code {
+    margin-bottom: 4px;
+    background: linear-gradient(110deg, #e91e8c, #7c3aed);
+    background-clip: text;
+    color: transparent;
+    font-size: clamp(88px, 20vw, 144px);
+    font-weight: 800;
+    letter-spacing: -0.1em;
+    line-height: 1;
+}
+
+.not-found__content h1 {
+    margin: 16px 0 10px;
+    color: #241a30;
+    font-size: clamp(25px, 5vw, 34px);
+    font-weight: 750;
+    letter-spacing: -0.8px;
+}
+
+.not-found__content p {
+    max-width: 430px;
+    margin: 0 auto;
+    color: #766d80;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.not-found__home {
+    display: inline-flex;
+    min-width: 170px;
+    min-height: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 26px;
+    padding: 0 22px;
+    border-radius: 11px;
+    background: linear-gradient(110deg, #e91e8c, #7c3aed);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.not-found__home:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 24px rgba(124, 58, 237, 0.22);
+}
+
+@media (max-width: 520px) {
+    .not-found-page {
+        padding: 24px 16px;
+    }
+
+    .not-found__brand {
+        gap: 10px;
+        margin-bottom: 26px;
+        font-size: 29px;
+    }
+
+    .not-found__logo {
+        width: 60px;
+        height: 60px;
+    }
+}
