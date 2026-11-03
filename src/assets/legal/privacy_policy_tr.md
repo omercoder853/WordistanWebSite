@@ -120,5 +120,5 @@ Bu Gizlilik Politikası, sunulan yeni özellikler, teknolojik yenilikler veya ya
 Gizlilik uygulamalarımız, kişisel verileriniz veya bu politika hakkında sorularınız için bizimle iletişime geçebilirsiniz:
 
 - **Veri Sorumlusu:** Ömer Faruk Gülşen
-- **E-posta:** [omergulsen.ops@gmail.com](mailto:omergulsen.ops@gmail.com)
+- **E-posta:** [support@wordistan.com.tr](mailto:support@wordistan.com.tr)
 

@@ -9,7 +9,7 @@ Pursuant to Turkish Personal Data Protection Law No. 6698 ("KVKK"), your persona
 
 - **Data Controller:** Ömer Faruk Gülşen
 - **Service:** Wordistan Website and Mobile Application
-- **Contact Email:** [omergulsen.ops@gmail.com](mailto:omergulsen.ops@gmail.com)
+- **Contact Email:** [support@wordistan.com.tr](mailto:support@wordistan.com.tr)
 
 ---
 
@@ -90,7 +90,7 @@ Under Article 11 of the KVKK, you are entitled to:
 ### 9. Application Method and Contact
 To exercise the rights outlined above, you may submit your application in accordance with the "Communiqué on the Principles and Procedures for the Request to Data Controller":
 
-- **Via Email:** From your registered email address to [omergulsen.ops@gmail.com](mailto:omergulsen.ops@gmail.com).
+- **Via Email:** From your registered email address to [support@wordistan.com.tr](mailto:support@wordistan.com.tr).
 
 Your request will be evaluated and finalized free of charge within **30 (thirty) days** at the latest, depending on the nature of the request. However, if the procedure incurs an additional cost, a fee specified by the Personal Data Protection Board may be charged.
 

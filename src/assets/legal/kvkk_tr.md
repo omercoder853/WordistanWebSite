@@ -9,7 +9,7 @@
 
 - **Veri Sorumlusu:** Ömer Faruk Gülşen
 - **Hizmet:** Wordistan İnternet Sitesi ve Mobil Uygulaması
-- **İletişim E-postası:** [omergulsen.ops@gmail.com](mailto:omergulsen.ops@gmail.com)
+- **İletişim E-postası:** [support@wordistan.com.tr](mailto:support@wordistan.com.tr)
 
 ---
 
@@ -90,7 +90,7 @@ KVKK'nın 11. maddesi kapsamında veri sahibi olarak aşağıdaki haklara sahips
 ### 9. Başvuru Usulü ve İletişim
 Yukarıda sayılan haklarınıza ilişkin taleplerinizi, "Veri Sorumlusuna Başvuru Usul ve Esasları Hakkında Tebliğ" hükümlerine uygun olarak, kimliğinizi tevsik edici belgeler ile birlikte:
 
-- **E-posta Yoluyla:** Sistemimizde kayıtlı e-posta adresiniz üzerinden [omergulsen.ops@gmail.com](mailto:omergulsen.ops@gmail.com) adresine iletebilirsiniz.
+- **E-posta Yoluyla:** Sistemimizde kayıtlı e-posta adresiniz üzerinden [support@wordistan.com.tr](mailto:support@wordistan.com.tr) adresine iletebilirsiniz.
 
 Başvurunuz niteliğine göre en kısa sürede ve en geç **30 (otuz) gün** içinde ücretsiz olarak sonuçlandırılacaktır. Ancak, işlemin ayrıca bir maliyet gerektirmesi hâlinde, Kişisel Verileri Koruma Kurulu tarafından belirlenen tarifedeki ücret talep edilebilir.
 

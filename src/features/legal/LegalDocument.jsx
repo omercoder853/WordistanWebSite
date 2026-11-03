@@ -229,10 +229,10 @@ export default function LegalDocument({ docKey }) {
         </div>
         <div className="legal-doc__footer-right">
           <a
-            href="mailto:omergulsen.ops@gmail.com"
+            href="mailto:support@wordistan.com.tr"
             className="legal-doc__contact-link"
           >
-            omergulsen.ops@gmail.com
+            support@wordistan.com.tr
           </a>
         </div>
       </footer>

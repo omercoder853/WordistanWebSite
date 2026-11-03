@@ -128,5 +128,5 @@ Aşağıdaki durumlarda Wordistan, kullanıcının hesabını askıya alma veya 
 Kullanım Koşulları'na ilişkin her türlü soru, geri bildirim veya talebiniz için bizimle iletişime geçebilirsiniz:
 
 - **Hizmet Sağlayıcı:** Ömer Faruk Gülşen
-- **E-posta:** [omergulsen.ops@gmail.com](mailto:omergulsen.ops@gmail.com)
+- **E-posta:** [support@wordistan.com.tr](mailto:support@wordistan.com.tr)
 

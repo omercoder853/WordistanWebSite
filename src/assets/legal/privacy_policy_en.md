@@ -120,5 +120,5 @@ We may update this Privacy Policy periodically to reflect service evolutions or 
 For any inquiries regarding this Privacy Policy or your personal data rights, please contact:
 
 - **Data Controller:** Ömer Faruk Gülşen
-- **Email:** [omergulsen.ops@gmail.com](mailto:omergulsen.ops@gmail.com)
+- **Email:** [support@wordistan.com.tr](mailto:support@wordistan.com.tr)
 

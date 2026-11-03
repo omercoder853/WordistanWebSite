@@ -128,5 +128,5 @@ These Terms are governed by and construed in accordance with the laws of the Rep
 If you have any questions, feedback, or concerns regarding these Terms of Service, please contact us:
 
 - **Operator:** Ömer Faruk Gülşen
-- **Email:** [omergulsen.ops@gmail.com](mailto:omergulsen.ops@gmail.com)
+- **Email:** [support@wordistan.com.tr](mailto:support@wordistan.com.tr)
 
