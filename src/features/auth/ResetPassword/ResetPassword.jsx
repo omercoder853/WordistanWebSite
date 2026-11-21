@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { toast } from "react-toastify";
 import { useTranslation } from "react-i18next";
-import NotFoundPage from "../../components/NotFoundPage/NotFoundPage";
+import NotFoundPage from "../../../components/NotFoundPage/NotFoundPage";
 import "./ResetPassword.css";
 
 function isExpiredToken(token) {

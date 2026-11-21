@@ -6,7 +6,8 @@ import About from './features/about/About'
 import Contact from './features/contact/Contaxt'
 import LegalLayout from './features/legal/LegalLayout'
 import LegalDocument from './features/legal/LegalDocument'
-import ResetPassword from './features/auth/ResetPassword'
+import ResetPassword from './features/auth/ResetPassword/ResetPassword'
+import DeleteAccount from './features/auth/DeleteAccount/DeleteAccount'
 import ScrollToTopButton from './components/ScrollToTopButton/ScrollToTopButton'
 import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
@@ -36,7 +37,8 @@ function AppRoutes() {
           <Route path="terms-of-service" element={<LegalDocument docKey="terms_of_service" />} />
           <Route path="*" element={<Navigate to="kvkk" replace />} />
         </Route>
-        <Route path='/auth/reset-password' element={<ResetPassword />} />
+        <Route path='/auth/reset-password' element={<ResetPassword />}/>
+        <Route path= '/auth/delete-account' element={<DeleteAccount/>}/>
         <Route path='*' element={<NotFoundPage />} />
       </Routes>
       {showSiteNavigation && <Footer />}
