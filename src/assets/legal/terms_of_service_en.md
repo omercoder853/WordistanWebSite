@@ -1,6 +1,6 @@
 # Wordistan Terms of Service
 
-*Last Updated: October 29, 2026*
+*Last Updated: November 22, 2026*
 
 ---
 
@@ -34,7 +34,7 @@ You may create an account using a valid email address and password, or through s
 
 - **Account Accuracy:** You agree to provide accurate, current, and complete information during registration and keep your account details updated.
 - **Account Security:** You are responsible for maintaining the confidentiality of your credentials and for all activities that occur under your account. Please notify us immediately if you suspect unauthorized access.
-- **Age Requirement:** Wordistan is intended for users who are at least 13 years old. Users below the legal age of majority in their jurisdiction require parental or legal guardian consent and oversight to use the Service.
+- **Age Requirement:** Children under 13 may not register for or use Wordistan. Users aged 13 or older do not need parental or legal guardian consent to register or use the Service.
 - **Compliance:** You agree to use the Service in full compliance with all applicable laws, third-party rights, and these Terms.
 
 ---
@@ -85,8 +85,8 @@ Wordistan's source code, application designs, trademarks, logos, visual assets, 
 ### 8. Privacy and Personal Data
 The collection, processing, and protection of your personal data are governed by the **Wordistan Privacy Policy** and, where applicable, our **KVKK Privacy Notice**.
 
-- Users may delete their account and associated data at any time via the in-app account settings.
-- Account deletion initiates the removal of your personal profile data, subject to statutory retention obligations and regular automated backup cycles.
+- Users may delete their account and associated data at any time via **Profile > Personal Information > Delete Account** in the application or through the [account deletion page](https://www.wordistan.com.tr/auth/delete-account).
+- Account deletion initiates the permanent removal of your personal profile and learning data. Deleted account data is not retained in backups, except where a specific statutory retention obligation requires otherwise.
 
 ---
 

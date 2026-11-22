@@ -1,6 +1,6 @@
 # Wordistan Gizlilik Politikası
 
-*Son Güncelleme: 29 Ekim 2026*
+*Son Güncelleme: 22 Kasım 2026*
 
 ---
 
@@ -30,7 +30,7 @@ Bu politika genel veri koruma prensiplerimizi ve uygulamalarımızı kapsar. Tü
 - Bu veriler temel dil öğrenme işlevlerinin sağlanması, verilerin saklanması ve kayıtlı hesaplarda cihazlar arası veri eşitlemesi yapılması için işlenir.
 
 #### 2.4. İletişim Formu Bilgileri
-- Wordistan web sitesinde yer alan iletişim formu doldurulduğunda girilen ad-soyad, e-posta adresi ve mesaj metni.
+- Wordistan web sitesindeki veya mobil uygulamasındaki iletişim formu doldurulduğunda girilen ad-soyad, e-posta adresi ve mesaj metni.
 - Bu veriler yalnızca geri bildirimlerin incelenmesi, teknik yardım sağlanması ve sorularınızın yanıtlanması amacıyla **Formspree** e-posta iletim altyapısı üzerinden güvenli biçimde işlenmektedir.
 - Kullanıcıların iletişim formuna kimlik numarası, parola veya özel nitelikli hassas veri girmemesi tavsiye edilir.
 
@@ -65,7 +65,7 @@ Verileriniz, yukarıda sayılan amaçların haricindeki herhangi bir ticari ama�
 Wordistan, hizmetin güvenli ve kesintisiz şekilde sunulması için uluslararası standartlara sahip altyapı sağlayıcılarından yararlanmaktadır:
 - **Supabase:** Kimlik doğrulama, güvenli PostgreSQL veritabanı ve dosya depolama altyapısı.
 - **Google:** Kullanıcının Google ile giriş yapmayı seçmesi halinde OAuth kimlik doğrulama entegrasyonu.
-- **Formspree:** İletişim formu mesajlarının güvenli biçimde e-posta kanalımıza ulaştırılması.
+- **Formspree:** Web sitesi ve mobil uygulamadaki iletişim formu mesajlarının güvenli biçimde e-posta kanalımıza ulaştırılması.
 
 Wordistan, kişisel verilerinizi reklam şirketlerine, veri simsarlarına veya üçüncü taraf pazarlamacılara kesinlikle satmaz ve kiralamaz. Platformun mevcut sürümünde uygulama içi satın alma veya reklam gösterimi bulunmamaktadır.
 
@@ -74,15 +74,13 @@ Wordistan, kişisel verilerinizi reklam şirketlerine, veri simsarlarına veya �
 ### 6. Yurt Dışına Veri Aktarımı
 Wordistan'ın kullandığı **Supabase** bulut altyapısı Singapur'da yer almaktadır. Bu kapsamda, kayıtlı kullanıcıların veri tabanına kaydettiği profil ve sözlük verileri güvenli şekilde yurt dışında barındırılmaktadır.
 
-Yurt dışına veri aktarımı; mevzuatın gerektirdiği uygun güvenlik tedbirleri, uçtan uca şifreleme ve ilgili mevzuat uyarınca kullanıcıların aydınlatılması ve rızası dahilinde güvenli veri merkezlerinde gerçekleştirilir.
+Yurt dışına veri aktarımı; mevzuatın gerektirdiği uygun güvenlik tedbirleri, uçtan uca şifreleme ve ilgili mevzuat uyarınca gerekli bilgilendirme ve açık rıza prosedürleri uygulanarak güvenli veri merkezlerinde gerçekleştirilir.
 
 ---
 
 ### 7. Veri Saklama ve Silme Politikası
 - **Aktif Hesaplar:** Kişisel verileriniz, hesabınız aktif kaldığı ve Hizmet'i sunmak için gerekli olduğu müddetçe saklanır.
-- **Hesap Silme:** Kullanıcı dilediği an uygulama içerisindeki "Hesabı Sil" seçeneğini kullanarak profilini ve tüm öğrenme verilerini silebilir. Silinen veriler anında üretim veritabanından kaldırılır.
-- **Yasal Saklama:** Yasal yükümlülükler veya olası uyuşmazlıklarda delil saklama gerekçesiyle mevzuatın emrettiği asgari süreler boyunca gerekli temel kayıtlar saklanabilir.
-- **Sistem Yedekleri:** Felaket kurtarma amaçlı oluşturulan teknik yedekleme kopyalarındaki veriler, sistemin yedekleme döngülerine uygun olarak azami 30 ila 90 gün içerisinde kademeli ve güvenli olarak kalıcı şekilde imha edilir.
+- **Hesap Silme:** Hesabınızı mobil uygulamada **Profil > Kişisel Bilgiler > Hesabı Sil** adımlarını izleyerek veya uygulamaya erişiminiz olmasa bile [hesap silme sayfası](https://www.wordistan.com.tr/auth/delete-account) üzerinden istediğiniz zaman silebilirsiniz. Hesap silindiğinde profil bilgileriniz ve öğrenme verileriniz sistemlerimizden kalıcı olarak kaldırılır; silinen hesap verileri yedeklerde tutulmaz.
 
 ---
 
@@ -107,7 +105,7 @@ Kişisel verileriniz üzerinde tam kontrole sahipsiniz. Yürürlükteki veri kor
 ---
 
 ### 10. Çocukların Gizliliği
-Wordistan, 13 yaşın altındaki çocuklardan bilerek doğrudan kişisel veri toplamaz. 13 yaş altındaki bireylerin platformu veli veya yasal vasi refakati ve onayıyla kullanması zorunludur.
+13 yaşından küçük kişiler Wordistan uygulamasına kayıt olamaz. 13 yaş ve üzerindeki kişiler kayıt olmak ve uygulamayı kullanmak için veli veya yasal vasi iznine ihtiyaç duymaz.
 
 ---
 

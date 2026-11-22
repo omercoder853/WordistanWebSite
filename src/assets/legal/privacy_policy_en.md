@@ -1,6 +1,6 @@
 # Wordistan Privacy Policy
 
-*Last Updated: October 29, 2026*
+*Last Updated: November 22, 2026*
 
 ---
 
@@ -30,7 +30,7 @@ This Policy describes our general data protection practices. Users located in th
 - This data is processed to deliver core language-learning features, store user content, and maintain real-time synchronization across authenticated devices.
 
 #### 2.4. Contact Form Information
-- Full name, email address, and message contents submitted through the Wordistan contact form.
+- Full name, email address, and message contents submitted through the contact form on the Wordistan website or mobile application.
 - This information is securely transmitted via the **Formspree** delivery infrastructure solely to review inquiries, provide technical support, and respond to your messages.
 - Users are advised not to include sensitive personal details (such as identification numbers or payment data) in the contact form.
 
@@ -65,7 +65,7 @@ We do not sell, rent, or monetize your personal data with third parties for comm
 Wordistan partners with reputable infrastructure providers to deliver reliable and secure operations:
 - **Supabase:** Authentication services, secure PostgreSQL database management, and cloud storage.
 - **Google:** OAuth authentication services when users select the "Sign in with Google" option.
-- **Formspree:** Secure handling and delivery of messages submitted via the website contact form.
+- **Formspree:** Secure handling and delivery of messages submitted via the website and mobile application contact forms.
 
 Wordistan does not sell your personal data to data brokers or advertising networks. The current beta version does not display third-party advertisements or offer in-app purchases.
 
@@ -74,15 +74,13 @@ Wordistan does not sell your personal data to data brokers or advertising networ
 ### 6. International Data Transfers
 Wordistan’s **Supabase** cloud infrastructure is hosted in Singapore. Accordingly, stored database records and profile data of registered users are securely hosted in Singapore.
 
-International transfers are conducted in accordance with applicable data protection laws, utilizing strict encryption standards and security safeguards to guarantee high-level data protection.
+International transfers are conducted in accordance with applicable data protection laws, utilizing strict encryption standards and security safeguards to guarantee high-level data protection. Explicit consent is obtained where required by applicable law.
 
 ---
 
 ### 7. Data Retention and Deletion
 - **Active Accounts:** Personal data is retained for as long as your account remains active and necessary to provide the Service.
-- **Account Deletion:** Users may delete their account at any time using the in-app "Delete Account" option. Account deletion immediately purges profile information and dictionaries from production databases.
-- **Statutory Retention:** Specific records may be retained where required by law or for resolving legal disputes.
-- **Technical Backups:** Disaster-recovery system backups are incrementally and securely overwritten within standard operational cycles of 30 to 90 days.
+- **Account Deletion:** You can delete your account in the mobile application by going to **Profile > Personal Information > Delete Account**, or at any time through our [account deletion page](https://www.wordistan.com.tr/auth/delete-account), even if you cannot access the application. When your account is deleted, your profile information and learning data are permanently removed from our systems and are not retained in backups.
 
 ---
 
@@ -107,7 +105,7 @@ Subject to applicable law, you have the right to:
 ---
 
 ### 10. Children's Privacy
-Wordistan does not knowingly collect personal data directly from children under 13 without appropriate parental or legal guardian consent. If you believe a minor has registered without such consent, please contact us immediately.
+Children under 13 may not register for the Wordistan application. Users aged 13 or older do not need parental or legal guardian consent to register or use the application.
 
 ---
 

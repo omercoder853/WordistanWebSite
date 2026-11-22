@@ -1,6 +1,6 @@
 # Wordistan Kullanım Koşulları
 
-*Son Güncelleme: 29 Ekim 2026*
+*Son Güncelleme: 22 Kasım 2026*
 
 ---
 
@@ -34,7 +34,7 @@ Wordistan'a geçerli bir e-posta adresi ve şifreyle veya desteklenen Google kim
 
 - **Hesap Bilgilerinin Doğruluğu:** Kayıt sırasında istenen bilgilerin doğru, eksiksiz ve güncel olmasından kullanıcı sorumludur.
 - **Hesap Güvenliği:** Hesap şifrenizin ve erişim anahtarlarınızın gizliliğini korumak sizin sorumluluğunuzdadır. Hesabınıza yetkisiz erişim sağlandığından şüphelenmeniz durumunda derhal bizimle iletişime geçmelisiniz.
-- **Yaş Sınırı:** Wordistan'ın hedeflenen asgari kullanıcı yaşı 13'tür. 13 yaşın altındaki veya bulundukları ülkenin mevzuatına göre reşit sayılmayan kişilerin platformu kullanabilmesi için veli veya yasal temsilci onayı gereklidir.
+- **Yaş Sınırı:** 13 yaşından küçük kişiler Wordistan'a kayıt olamaz veya uygulamayı kullanamaz. 13 yaş ve üzerindeki kişiler kayıt olmak veya Hizmet'i kullanmak için veli ya da yasal temsilci iznine ihtiyaç duymaz.
 - **Mevzuata Uygunluk:** Hizmeti kullanırken yürürlükteki mevzuata, kamu düzenine, genel ahlaka ve üçüncü kişilerin fikrî/şahsi haklarına riayet etmek zorunludur.
 
 ---
@@ -85,8 +85,8 @@ Wordistan'ın yazılım kodları, logo ve markası, arayüz tasarımı, grafik m
 ### 8. Gizlilik ve Kişisel Veriler
 Kişisel verilerinizin toplanması, işlenmesi ve saklanması süreçleri **Wordistan Gizlilik Politikası** ve **KVKK Aydınlatma Metni** kapsamında yönetilmektedir.
 
-- Kullanıcılar hesaplarını ve kayıtlı verilerini uygulama içerisindeki hesap yönetim araçları üzerinden istedikleri an silebilirler.
-- Hesap silme işlemiyle birlikte kullanıcıya ait tüm kişisel veriler veri tabanından silinir; mevzuattan kaynaklanan saklama zorunlulukları ile periyodik teknik yedekleme döngüleri ilgili yasal çerçeveye uygun olarak yürütülür.
+- Kullanıcılar hesaplarını ve ilişkili verilerini uygulama içerisindeki **Profil > Kişisel Bilgiler > Hesabı Sil** seçeneği veya [hesap silme sayfası](https://www.wordistan.com.tr/auth/delete-account) üzerinden istedikleri zaman silebilirler.
+- Hesap silme işlemiyle kullanıcıya ait profil ve öğrenme verileri kalıcı olarak kaldırılır. Silinen hesap verileri yedeklerde tutulmaz; yalnızca uygulanacak mevzuattan doğan özel saklama zorunluluğu varsa bu istisna uygulanır.
 
 ---
 

@@ -1,6 +1,6 @@
 # Kişisel Verilerin İşlenmesi Hakkında Aydınlatma Metni (KVKK)
 
-*Son Güncelleme: 29 Ekim 2026*
+*Son Güncelleme: 22 Kasım 2026*
 
 ---
 
@@ -45,7 +45,7 @@ Kişisel verileriniz, 6698 sayılı Kanun’un 5. maddesinde belirtilen aşağı
 3. **Meşru Menfaat (KVKK m. 5/2-f):**  
    İlgili kişinin temel hak ve özgürlüklerine zarar vermemek kaydıyla; bilgi güvenliğinin sağlanması, sistem performansının izlenmesi, teknik arızaların tespiti ve hizmet kalitesinin artırılması için zorunludur.
 4. **Açık Rıza (KVKK m. 5/1):**  
-   Kanunda öngörülen istisnaların bulunmadığı hallerde, yurt dışına veri aktarımı ve isteğe bağlı analitik tercihler açık rızanıza istinaden gerçekleştirilir.
+   Kanunda öngörülen istisnaların bulunmadığı hallerde; özellikle KVKK'nın gerektirmesi halinde yurt dışına veri aktarımı için açık rıza alınır.
 
 ---
 
@@ -61,15 +61,16 @@ Kişisel verileriniz, yukarıda belirtilen amaçların gerçekleştirilmesi doğ
 ### 6. Yurt Dışına Veri Aktarımı
 Wordistan veri tabanı ve kimlik doğrulama hizmetleri kapsamında kullanılan **Supabase** bulut altyapısı Singapur lokasyonlu sunucularda barındırılmaktadır.
 
-Bu doğrultuda, platforma kayıt olduğunuzda ve verilerinizi senkronize ettiğinizde, kişisel verileriniz KVKK’nın 9. maddesinde yer alan yurt dışına aktarım şartlarına, veri güvenliği taahhütlerine ve kullanıcı onayına uygun olarak yurt dışındaki güvenli sunucularda saklanmaktadır. Veri iletimi TLS/SSL gibi güçlü kriptografik protokollerle korunmaktadır.
+Bu doğrultuda, platforma kayıt olduğunuzda ve verilerinizi senkronize ettiğinizde, kişisel verileriniz KVKK'nın 9. maddesinde yer alan yurt dışına aktarım şartlarına, gerekli güvenlik tedbirlerine ve gerektiğinde açık rızaya uygun olarak yurt dışındaki güvenli sunucularda saklanmaktadır. Veri iletimi TLS/SSL gibi güçlü kriptografik protokollerle korunmaktadır.
 
 ---
 
 ### 7. Saklama Süreleri ve İmha
 - Kişisel verileriniz, hesabınız aktif olduğu sürece ve işleme amacının gerektirdiği müddetçe saklanır.
-- Kullanıcı hesabını sildiğinde, ilişkili tüm kişisel veriler birincil veri tabanlarımızdan ivedilikle silinir.
+- Kullanıcı hesabını sildiğinde, profil bilgileri ve öğrenme verileri dâhil ilişkili tüm kişisel veriler Wordistan sistemlerinden kalıcı olarak kaldırılır; silinen hesap verileri yedeklerde tutulmaz.
 - Mevzuattan doğan yasal saklama sürelerinin bulunması halinde veriler bu sürelerin sonuna kadar güvenli arşivde tutulur.
-- Felaket kurtarma sistemlerindeki yedek kayıtlar ise azami 30 ila 90 günlük rutin yedekleme döngüleri neticesinde kalıcı olarak imha edilmekte veya anonim hale getirilmektedir.
+
+13 yaşından küçük kişilerin Wordistan'a kayıt olması veya uygulamayı kullanması mümkün değildir. 13 yaş ve üzerindeki kişiler kayıt olabilir ve veli ya da yasal temsilci izni olmadan uygulamayı kullanabilir.
 
 ---
 

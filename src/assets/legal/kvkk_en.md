@@ -1,6 +1,6 @@
 # Privacy Notice Under Turkish Personal Data Protection Law (KVKK)
 
-*Last Updated: October 29, 2026*
+*Last Updated: November 22, 2026*
 
 ---
 
@@ -45,7 +45,7 @@ Your personal data is processed under the statutory legal grounds set forth in A
 3. **Legitimate Interests of the Data Controller (KVKK Art. 5/2-f):**  
    Necessary for cybersecurity management, bug detection, infrastructure optimization, and overall quality enhancement, provided that fundamental rights and freedoms are not harmed.
 4. **Explicit Consent (KVKK Art. 5/1):**  
-   Applied where statutory exemptions do not exist, notably for international data storage and voluntary demographic profiling.
+   Applied only where a statutory exception does not exist, including for international transfers if KVKK requirements make consent necessary.
 
 ---
 
@@ -61,15 +61,16 @@ In furtherance of the purposes mentioned above and within legal boundaries, pers
 ### 6. International Data Transfers
 Wordistan utilizes cloud infrastructure hosted by **Supabase** in Singapore data center facilities.
 
-Consequently, upon account registration and data synchronization, your personal data is securely stored on international servers pursuant to Article 9 of the KVKK, subject to technical safeguards, user consent, and robust data encryption (including TLS/SSL standards) during transmission and at rest.
+Consequently, upon account registration and data synchronization, your personal data is securely stored on international servers pursuant to Article 9 of the KVKK, subject to technical safeguards, applicable transfer requirements, and robust data encryption (including TLS/SSL standards) during transmission and at rest.
 
 ---
 
 ### 7. Data Retention and Erasure
 - Personal data is retained throughout the active life cycle of your account and for the duration necessary to deliver the Service.
-- When an account is deleted, all related personal records and dictionaries are promptly deleted from primary production databases.
+- When an account is deleted, all related personal records and learning data are permanently removed from Wordistan's systems; deleted account data is not retained in backups.
 - Where statutory retention obligations exist, data is maintained securely until statutory periods expire.
-- Backup snapshots kept for disaster recovery are permanently purged or anonymized within periodic system cycles of 30 to 90 days.
+
+Wordistan does not allow children under 13 to register or use the application. Users aged 13 or older may register and use the application without parental or legal guardian consent.
 
 ---
 
